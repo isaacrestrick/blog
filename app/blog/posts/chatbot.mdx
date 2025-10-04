@@ -1,0 +1,36 @@
+---
+title: 'Building a chatbot with memory'
+publishedAt: '2025-10-04'
+summary: 'Chatbot, with memory'
+---
+
+## This week, I built a chatbot that leverages Claude Sonnet 4.5's ability to interact with a memories folder and use it as a memory store.
+
+The site is hosted on here: https://chatbot-five-chi-87.vercel.app/
+Here is the github repository: https://github.com/isaacrestrick/chatbot
+
+The site has the following features:
+- Users can sign up and log in with either an email or a google account
+- Users can create new chats, view old chats, or delete old chats
+- Each user's account has an associated memories folder in a supabase bucket, which claude reads and write to through a memory tool
+
+Future directions:
+- Name chats
+- More than one set of memories - a user could have multiple projects as opposed to Claude having one memory
+- Adding the ability for users to view and edit these files as well
+- Make the experience like that of a coding agent, but for a respository of generic text files as opposed to a code repository
+- Clean up code
+
+## Technologies used
+
+Frontend:
+- React Router (framework), Vercel AI SDK, BetterAuth
+- Shadcn, Assistant UI
+
+Backend:
+- React Router (framework), Vercel AI SDK
+- Supabase Database and Supabase Storage
+
+## Learnings
+
+I am gaining familiarity with building full-stack applications. 
